@@ -88,6 +88,11 @@ lines = [
         , r'# input_file = os.path.join(sys.path[0], "input{}.txt")'.format(daynumber_formatted)
         , r'with open(input_file) as f:'
         , r'    lines = f.read().splitlines()'
+        , r''
+        , r'for line in lines:'
+        , r'    print("Line: ", line)'
+        , r'print("---------------")'
+        , r'print("ANSWER: ")'
     ]
 create_file_if_not_exists(file_input, lines)
 
